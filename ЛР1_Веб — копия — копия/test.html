@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="Styles.css">
+    <title>Тесты</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+</style>
+<html>
+<header>
+    <div style="border: solid; color: rgb(0, 0, 0); height: 19mm;">
+        <div id="top" style="margin-top: 5mm;">
+            <a href=about_me.html class="left">
+                Обо мне
+            </a>
+            <div style="float:inline-start" class="General_menu">
+            <a href=my_interests.html class="left">
+                Мои интересы
+            </a>
+            <div style="background-color:whitesmoke;" class="Menu">
+                <ul>
+                <li>
+                <a style="color:red;" href="my_interests.html#music">Музыка</a>
+                </li>
+                <li>
+                <a style="color:orange" href="my_interests.html#book">Книги</a>
+                </li>
+                <li>
+                <a  style="color:yellowgreen" href="my_interests.html#anime">Аниме</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+            <div style="float:inline-end; margin-right: 5mm;" id="dateTime">
+                
+            </div>
+            <a href=study.html class="left">
+                Учеба
+            </a>
+            <div style="float:right; margin-right: 5mm;">
+                <a href=foto.html class="right">
+                    Фотоальбом
+                </a>
+                <a href=conatcts.html class="right">
+                    Контакты
+                </a>
+                <a href=Main_page.html class="right">
+                    Главна страница
+                </a>
+                <a href="history.html" class="right">
+                    История
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <body>
+    <div
+        style="height: 320mm; width: 150mm; margin-left: 55mm; " class="border">
+        <div style="margin-left: 2.5mm;">
+
+            <h1>
+                <center>Тест</center>
+            </h1>
+
+            <form id="myform" action="mailto:alisadmitrieva2005@mail.com?subject=Test" method="GET">
+                <label id="fullnameLabel" for="fullname"><div>Фамилия, Имя, Отчество:</div><input id="fullname" type="text" placeholder="Введите свое ФИО" required/></label>
+
+                <label id="group" for="group">Курс:</label>
+                <select id="group" name="group" required>
+                    <option value="">Выберите курс</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <div>
+                    <p>
+                        <label id="question1Label" for="question1"><div>Кто из физиков впервые доказал, что Земля круглая?</div><input id="question1" type="text" placeholder="Введите ответ" style="height: 25mm; width: 100mm;"></label>
+                    </p>
+                </div>
+
+                <div>
+                    <label id="label-text">Какой из этих процессов включает в себя преобразование энергии?</label>
+                    <p>
+                        <label id="emissiaLabel"> Эмиссия света<input type="checkbox" id="emissia" value="emissia"></label>
+                        <label id="yaderniiLabel"> Ядерный распад<input type="checkbox" id="yadernii" value="yadernii"></label>
+                        <label id="difractiaLabel"> Дифракция света<input type="checkbox" id="difractia" value="difractia"></label>
+                        <label id="electronLabel"> Электронный переход в атоме<input type="checkbox" id="electron" value="electron"></label>
+                    </p>
+                </div>
+                
+                <label id="dropdownLabel" for="dropdown"><div>Какой из следующих элементов периодической таблицы является газом при комнатной температуре и
+                    нормальном атмосферном давлении?</div></label>
+                <select id="dropdown">
+                    
+                    <optgroup label="Металлы">
+                        <option> Железо </option>
+                        <option> Медь </option>
+                    </optgroup>
+                    <optgroup label="Газы">
+                        <option> Кислород </option>
+                        <option> Водород </option>
+                    </optgroup>
+                </select>
+
+                <label id="phoneLabel" for="phone"><div>Номер телефона:</div><input id="phone" type="text" placeholder="Введите номер телефона" required/></label>
+
+                <label for="email"><div>E-mail:</div><input id="email" type="email" placeholder="Введите ваше почту" required/></label>
+
+                <label id="topic-label" for="subject"><div class="label-text">Тема</div><input name="subject" id="text" type="text" placeholder="Введите тему письма" required /></label>
+
+                <button id="button3" type="button">Проверить</button>
+                <button id="button" type="submit">Отправить</button>
+                <button id="button2" type="reset">Очистить форму</button>
+                <div id="result"></div> 
+            </form>
+        </div>
+    </div>
+</body>
+<script src="valid.js"></script>
+<script src="dateTime.js"></script>
+<script src="historyPage.js"></script>
+</html>
